@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './pages/homepage_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -9,11 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Gamify-App',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        brightness: Brightness.dark
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: HomePage(/*title: 'Gamify App'*/),
     );
   }
 }
